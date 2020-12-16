@@ -27,7 +27,8 @@ import {
     Tag,
     Tree,
     Select,
-    Option 
+    Option,
+    Cascader 
 } from 'element-ui'
 // import { Input } from 'element-ui'
 // import { Form, FormItem} from 'element-ui'
@@ -60,6 +61,7 @@ Vue.use(Tag)
 Vue.use(Tree)
 Vue.use(Select)
 Vue.use(Option)
+Vue.use(Cascader)
 
 
 //与element-UI的其它组件不同（这里不用vue的use方法）
