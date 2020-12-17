@@ -181,7 +181,7 @@ export default {
           children: 'children'
       },
       // 选中的父级分类的id数组
-      selectedKeys: []
+      selectedKeys: [],
     };
   },
   created() {
@@ -263,7 +263,7 @@ export default {
         this.selectedKeys = [];
         this.addCateForm.cat_pid = 0;
         this.addCateForm.cat_level = 0;
-    }
+    },
   },
 };
 </script>
