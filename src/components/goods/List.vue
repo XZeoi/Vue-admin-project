@@ -23,11 +23,13 @@
       <!-- table表格区域 -->
       <el-table :data="goodsList" border stripe>
         <el-table-column type="index"></el-table-column>
-        <el-table-column prop="goods_name" label="商品名称">{{goodsList.goods_name}}
+        <!-- <el-table-column prop="goods_name" label="商品名称">{{goodsList.goods_name}}
+        </el-table-column> -->
+        <el-table-column prop="goods_name" label="商品名称">
         </el-table-column>
-        <el-table-column prop="goods_price" label="商品价格(元)" width="95px">{{goodsList.goods_price}}
+        <el-table-column prop="goods_price" label="商品价格(元)" width="95px">
         </el-table-column>
-        <el-table-column prop="goods_weight" label="商品重量" width="70px">{{goodsList.goods_weight}}
+        <el-table-column prop="goods_weight" label="商品重量" width="70px">
         </el-table-column>
         <!-- <el-table-column prop="add_time" label="创建时间" width="140px">{{goodsList.add_time | dateFormat}} -->
             <!-- 为什么这里一定要一个作用域插槽拿到数据，而不是直接用上面的方式（得到NaN） -->
@@ -49,7 +51,7 @@
         @current-change="handleCurrentChange"
         :current-page="queryInfo.pagenum"
         :page-sizes="[10, 20, 30, 40]"
-        :page-size="100"
+        :page-size="queryInfo.pagesize"
         layout="total, sizes, prev, pager, next, jumper"
         :total="total"
         background>
