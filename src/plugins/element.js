@@ -31,7 +31,12 @@ import {
     Cascader,
     Alert,
     Tabs,
-    TabPane 
+    TabPane,
+    Steps,
+    Step,
+    CheckboxGroup,
+    Checkbox,
+    Upload 
 } from 'element-ui'
 // import { Input } from 'element-ui'
 // import { Form, FormItem} from 'element-ui'
@@ -68,6 +73,11 @@ Vue.use(Cascader)
 Vue.use(Alert)
 Vue.use(Tabs)
 Vue.use(TabPane)
+Vue.use(Steps)
+Vue.use(Step)
+Vue.use(CheckboxGroup)
+Vue.use(Checkbox)
+Vue.use(Upload)
 
 
 //与element-UI的其它组件不同（这里不用vue的use方法）
